@@ -20,10 +20,13 @@
     // Regular
 
     // Interpolated
+    console.log('I am a dev %s loser', 'super')
 
     // Styled
+    console.log('%c I am some large text', 'font-size: 28px; background: grey; text-shadow: 2px 2px green')
 
     // warning!
+    console.warn('ah crap')
 
     // Error :|
 
@@ -31,11 +34,18 @@
 
     // Testing
 
+
     // clearing
 
     // Viewing DOM Elements
 
     // Grouping together
+      dogs.forEach(dog => {
+        console.group(`${dog.name}`)
+        console.log(`${dog.name} is ${dog.age * 7} in dog years`)
+        console.log(`${dog.name} is ${dog.age}`)
+        console.groupEnd(`${dog.name}`);
+      })
 
     // counting
 
